@@ -2,7 +2,7 @@ import numpy as np
 import matplotlib
 import matplotlib.pyplot as plt
 
-x = np.linspace(0, 2 * np.pi, 100)
+cscan = np.genfromtxt("cscan.csv",delimiter = ",");
 
-plt.plot(x, np.sin(x))
-plt.show()
+plt.imshow(cscan);
+plt.show();
